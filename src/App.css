@@ -1,0 +1,510 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+
+.pointer{
+  cursor: pointer;
+}
+
+.fit {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.filter {
+  background-color: rgba(0,0,0,0.5);
+}
+
+.container {
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  position: relative;
+  margin-top: 10pt;
+}
+
+.title {
+  width: 100%;
+  min-height: 50pt;
+}
+@media (min-width:850px) {
+  .title {
+    z-index: 0;
+  position: absolute;
+  }
+}
+@media (max-width:849px) {
+  .title {
+    z-index: 0;
+    position: relative;
+  }
+}
+
+.title p {
+  position: relative;
+  z-index: 0;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10px;
+  font-size: 11pt;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.55;
+  font-weight: 400;
+}
+@media (max-width:449px) {
+  .title br {
+    display: none;
+  }
+}
+
+
+.carrier {
+  position: relative;
+  z-index: 99;
+  margin:0;
+  padding:0;
+  width: 100%;
+  height: 50pt;
+}
+
+.logo {
+  background-image: url(img/_logo_.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-width: 130pt;
+  height: 50pt;
+  margin-left: 10pt;
+}
+@media (min-width:417px) {
+  .logo {
+    float: left;
+    background-position: left;
+  }
+}
+@media (max-width:416px) {
+  .logo {
+    background-position: center;
+  }
+}
+
+.contact {
+  padding-top: 9pt;
+  text-align: right;
+  width: 145pt;
+  margin-right: 15pt;
+  float: right;
+}
+
+
+.phone {
+  margin: 0;
+  padding: 0;
+  background-image: url(img/phone.png);
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-height: 20pt;
+}
+.phone a {
+  position: relative;
+  z-index: 99;
+  white-space: nowrap;
+  overflow: visible;
+  color: white;
+  text-decoration: none;
+  font-size: 15pt;
+  font-family: 'Roboto',Arial,sans-serif;
+  line-height: 1.55;
+  font-weight: 700;
+}
+
+.online{
+  box-sizing: border-box;
+  display: table;
+  width: 7pt;
+  height: 7pt;
+  margin-right: 5pt;
+}
+.dot {
+  border-radius: 100px;
+  background-color: #03f54c;
+  border-color: transparent;
+  border-style: solid;
+  box-shadow: 0 0 5px 1px rgb(0 250 75 / 40%);
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  max-height: 25pt;
+}
+.socials p {
+  z-index: 99;
+  margin-right: 5pt;
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: visible;
+  color: white;
+  font-size: 11pt;
+  font-family: 'Roboto',Arial,sans-serif;
+  line-height: 1.55;
+  font-weight: 700;
+}
+.socials a {
+  vertical-align: middle;
+}
+.socials img {
+  width:18pt;
+  height:18pt;
+}
+
+.main {
+  border: 2px solid #03f54c;
+  box-shadow: 0 0 5px 1px rgb(0 250 75 / 40%);
+  margin-left: 7%;
+  margin-right: 7%;
+}
+@media screen and (min-width: 901px) {
+  .main {
+    margin-top: 90pt;
+  }
+}
+@media screen and (max-width: 900px) {
+  .main {
+    margin-top: 60pt;
+    padding-bottom: 15px;
+  }
+}
+
+.main-top {
+  overflow: visible;
+  position: relative;
+}
+
+.main-text {
+  position: relative;
+  z-index: 100;
+  margin-top: 50px;
+  padding-right: 15%;
+  padding-left: 15%;
+}
+.main-text p {
+  font-family: 'Arial',Arial,sans-serif;
+  line-height: 1.25;
+  font-weight: 700;
+}
+@media screen and (min-width: 901px) {
+  .main-text p {
+    font-size: 25pt;
+  }
+}
+@media screen and (min-width: 601px) {
+  .main-text p {
+    font-size: 20pt;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main-text p {
+    font-size: 16pt;
+  }
+}
+.main-text span {
+  font-family: 'Arial',Arial,sans-serif;
+  line-height: 1.55;
+  font-weight: 400;
+}
+@media screen and (min-width: 601px) {
+  .main-text span {
+    font-size: 14pt;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main-text span {
+    font-size: 11pt;
+  }
+}
+.green-rnd {
+  font-size: 42px;
+  font-weight: 700;
+  padding: -195px;
+  width: 85px;
+  height: 85px;
+  position: absolute;
+  overflow: visible;
+  box-sizing: border-box;
+  display: table;
+  z-index:199;
+}
+@media (max-width: 519px){
+  .sale-rnd {
+    left: 38%;
+  }
+}
+@media (min-width: 520px){
+  .sale-rnd {
+    right: 43%;
+  }
+}
+@media (min-width: 720px){
+  .sale-rnd {
+    right: 20%;
+  }
+}
+@media (min-width: 900px){
+  .sale-rnd {
+    right: -42px;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .green-rnd {
+    animation: green-rnd-spin infinite 30s linear;
+  }
+}
+@keyframes green-rnd-spin {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .sale-rnd {
+    animation: sale-rnd-spin infinite 30s linear;
+  }
+}
+@keyframes sale-rnd-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.sale-rnd {
+  border-radius: 100px;
+  background-image: url(img/sale_rnd.png);
+  background-size: 165px 165px;
+  background-position: center center;
+  font-size: 42px;
+  font-weight: 700;
+  margin-top: -55px;
+  width: 150px;
+  height: 150px;
+  top: -35px;
+  position: absolute;
+  overflow: visible;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index:199;
+}
+@media (max-width: 519px){
+  .sale-rnd {
+    left: 30%;
+  }
+}
+@media (min-width: 520px){
+  .sale-rnd {
+    right: 39%;
+  }
+}
+@media (min-width: 900px){
+  .sale-rnd {
+    right: -80px;
+  }
+}
+
+
+.main .button {
+  position: relative;
+  z-index: 101;
+  border-radius: 30px;
+  height: 45pt;
+  width: 200pt;
+  margin: 5% auto;
+  background-color: transparent;
+  animation: blink 3s ease infinite;
+}
+@keyframes blink {
+  0% {
+    box-shadow: 0px 0px 3px 2px rgb(0 255 77 / 90%);
+  }
+  50% {
+    box-shadow: 0px 0px 3px 2px rgb(0 255 77 / 20%);
+  }
+  100% {
+    box-shadow: 0px 0px 3px 2px rgb(0 255 77 / 90%);
+  }
+}
+
+
+.main-images {
+  z-index: 1;
+  position: relative;
+}
+
+.main .left {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  background-image: url(img/mixalych.png);
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  width: 420pt;
+}
+@media (max-width: 599px) {
+  .left {
+    left: -25vw;
+    height: 48%;
+  }
+}
+@media (min-width: 600px) {
+  .left {
+    left: -20vw;
+    height: 45%;
+  }
+}
+@media (min-width: 620px) {
+  .left {
+    left: -20vw;
+    height: 50%;
+  }
+}
+@media (min-width:670px) {
+  .left {
+    left: -20vw;
+    height: 55%;
+  }
+}
+@media (min-width:760px) {
+  .left {
+    left: -20vw;
+    height: 65%;
+  }
+}
+@media (min-width:815px) {
+  .left {
+    left: -18vw;
+    height: 70%;
+  }
+}
+@media (min-width:950px) {
+  .left {
+    left: -15vw;
+    height: 75%;
+  }
+}
+@media (min-width:1080px) {
+  .left {
+    left: -10vw;
+    height: 75%;
+  }
+}
+@media (min-width:1250px) {
+  .left {
+    left: 0;
+    height: 75%;
+  }
+}
+@media (min-width:1310px) {
+  .left {
+    left: 0;
+    height: 80%;
+  }
+}
+.main .right {
+  z-index: 1;
+  position: absolute;
+  bottom: -150pt;
+  background-image: url(img/septik_2.png);
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+
+  height: 250pt;
+}
+@media (min-width:900px) {
+  .right {
+    right: -5vw;
+    width: 38%;
+  }
+}
+@media (min-width:600px) {
+  .right {
+    width: 38%;
+    right: -12vw;
+  }
+}
+@media (max-width:599px) {
+  .right {
+    right: -20vw;
+    width: 180px;
+  }
+}
+@media (min-width: 600px) {
+  .footer{
+    margin-top: 50pt;
+  }
+}
+@media (min-width: 600px) {
+  .footer{
+  margin-top: 15pt;
+  }
+}
+.sale-sqr {
+  position: relative;
+  margin: 12px auto;
+  align-content: end;
+  background-position: top;
+  background-image: url(img/sale_sqr.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 99;
+}
+@media (max-width:599px) {
+  .sale-sqr {
+    max-width: 60%;
+    height: 50pt;
+  }
+}
+@media (min-width:600px) {
+  .sale-sqr {
+    max-width: 80%;
+    height: 70pt;
+  }
+}
+@media (min-width:910px) {
+  .sale-sqr {
+    max-width: 40%;
+    height: 90pt;
+  }
+}
+.address p {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 99;
+  font-size: 12pt;
+  font-family: 'Roboto',Arial,sans-serif;
+  line-height: 1.55;
+  font-weight: 400;
+}
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
